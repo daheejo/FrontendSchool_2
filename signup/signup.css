@@ -5,3 +5,15 @@
 .signup-btn {
     text-decoration-line: none;
 }
+
+.personal-info {
+    -ms-overflow-style: none; 
+} 
+
+.personal-info::-webkit-scrollbar{ 
+    display:none; 
+}
+
+.next-btn {
+    float: right;
+}
