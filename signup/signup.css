@@ -17,3 +17,10 @@
 .next-btn {
     float: right;
 }
+
+.comp-btn {
+    margin: auto;
+    display: block;
+    /* button 가운데 정렬하는 새로운 방법! */
+    margin-top: 10px;
+}
