@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion FE 회원가입</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <h1 class="main-text">회원가입</h1>
+    <form action="" method="post">
+        <fieldset class="member-info">
+            <legend>회원정보 입력</legend>
+        <ul>
+            <li>
+                <label for="member-id">아이디</label>
+                <input type="text" required placeholder="아이디 입력" id="member-id">
+                <button type="button">중복 확인</button>
+            </li>
+            <li>
+                <label for="member-pw">비밀번호</label>
+                <input type="password" required placeholder="비밀번호 입력" id="member-pw">
+                <input type="password" required placeholder="비밀번호 확인" id="pw-conf">
+            </li>
+            <li>
+                <label for="member-name">이름</label>
+                <input type="text" required placeholder="이름을 입력하세요" id="member-name">
+            </li>
+            <li>
+                <label for="member-phone">휴대폰 번호</label>
+                <input type="tel" required placeholder="'-'없이 입력해주세요." id="memebr-phone">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset class="member-auth">
+        <legend>본인 인증</legend>
+        <ul>
+            <li>
+                <label for="member-email">이메일</label>
+                <input type="email" required placeholder="인증받을 이메일 주소" id="member-email">
+                <button type="button">확인 메일 발송</button>
+            </li>
+        </ul>
+    </fieldset>
+    <button type="submit" class="comp-btn">가입 완료</button>
+    </form>
+</body>
+</html>
