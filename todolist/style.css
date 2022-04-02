@@ -67,7 +67,7 @@ li:first-child {
 }
 
 li .hobak:hover{
-    background-image: url(images/icon-open.png);
+    /* background-image: url(images/icon-open.png); */
 
 }
 li .hobak {
