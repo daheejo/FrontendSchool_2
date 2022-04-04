@@ -1,0 +1,79 @@
+body {
+    background-color: #F0EBF8;
+}
+
+form {
+    width: 70%;
+    margin: 20px auto;
+}
+header {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    height: fit-content;
+    margin-bottom: 20px;
+    padding: 0 25px 10px;
+    border-radius: 8px;
+    border: solid 1px rgba(0,0,0,0.3);
+    border-top: #673BB7 solid 13px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: inherit;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    background-color: white;
+    border-radius: 8px;
+    border: solid 1px rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+    padding: 10px 20px 20px 20px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+input[name="sentence"] {
+    border: none;
+    border-bottom: solid 1px rgba(0,0,0,0.3);
+}
+
+select {
+    width: 45%;
+    height: 40px;
+    padding: 10px;
+}
+
+
+input[type="time"],input[type="date"] {
+    margin-top: 15px;
+    border: none;
+    border-bottom: solid 1px rgba(0,0,0,0.3);
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+div button:first-child {
+    background-color: #673BB7;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 25px;
+}
+
+div button:last-child {
+    background: none;
+    border: none;
+    color: #673BB7;
+    font-weight: bold;
+}
