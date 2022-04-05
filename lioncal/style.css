@@ -72,7 +72,7 @@ th[colspan="7"] {
     
 }
 
-td:nth-child(1),td:nth-child(8),td:nth-child(15),
+td:nth-child(1),td:nth-child(9),td:nth-child(17),
 td.holiday {
     color: red;
 }
