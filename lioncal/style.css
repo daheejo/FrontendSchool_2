@@ -1,0 +1,74 @@
+@import "reset.css";
+@font-face {
+    font-family: 'MinSans-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    /* border: solid black; */
+    width: 630px;
+    margin: 40px auto;
+}
+
+table {
+    width: 100%;
+}
+
+.cap-wrapper {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 10px;
+}
+
+h1.main-cap{
+    color: #BF1E2E;
+    font-size: 100px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.sub-cap-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 15px
+}
+
+p{
+    line-height: 20px;
+    font-family: 'MinSans-Medium';
+    text-align: right;
+}
+
+
+.sub-cap {
+    margin-bottom: 5px;
+    color: grey;
+    font-family: 'MinSans-Medium';
+}
+
+
+tbody {
+    font-family: 'MinSans-Medium';
+}
+
+.month {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.day {
+    font-size: 10px;
+}
+
+.date {
+    font-size: 7px;
+}
+
+td:nth-child(1),td:nth-child(8),td:nth-child(15) {
+    color: red;
+}
+
