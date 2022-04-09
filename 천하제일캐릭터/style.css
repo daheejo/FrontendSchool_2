@@ -1,4 +1,22 @@
+/* font */
+@font-face {
+    font-family: 'establishRoomNo703OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* color list */
+:root{
+    --skin: rgb(253,234,219);
+    --hair: #614124;
+    --ear: #E8C07D;
+}
+
 /* reset */
+@import 'reset.css';
+*{
+    font-family:  'establishRoomNo703OTF';
+}
 body {
     margin: 0%;
 }
@@ -8,28 +26,215 @@ h1 {
     font-size: ;
     font-weight: normal;
     text-align: center;
+    padding: 100px 0 50px 0;
 }
 
-:root{
-    
-}
 
 /* layouts */
 
-.center {
+.wrapper {
+    
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%);
+
 }
 
 body {
     background-color: pink;
-    color: 
 }
 
-.char {
-    width: 300px;
-    heigh: 280px;
-    background-color: antiquewhite;
+/* 얼굴 */
+.head {
+    /* display: flex; */
+    position: relative;
 }
+.face {
+    width: 300px;
+    height: 280px;
+    background-color: var(--skin);
+    margin: 0 auto;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+}
+
+.hair {
+    background-color: var(--hair);
+    width: 300px;
+    height: 100px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.ear {
+    position: absolute;
+    z-index: 10;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid var(--ear);
+    border-left: 15px solid var(var(--ear));
+    border-right: 15px solid var(var(--ear));
+}
+
+/* 얼굴> 눈 */
+.eyebrow {
+    position: absolute;
+    background-color: var(--hair);
+    width:80px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+
+}
+
+.eyebrow.left {
+    position: absolute;
+    left: 40px;
+
+}
+
+.eyebrow.right {
+    position: absolute;
+    right: 40px;
+}
+
+.eyebrow:after {
+    content: ' ';
+    position: absolute;
+    background-color: var(--skin);
+    width: 80px;
+    height: 100px;
+    border-radius: 50px;
+    top: 10px;
+}
+
+.eye {
+    position: absolute;
+    background-color: white;
+    width: 20%;
+    height: 30%;
+    bottom: 60px;
+    border-radius: 100%;
+    
+}
+
+.eye.left {
+    left: 50px;
+}
+
+.eye.right {
+    right: 50px;
+}
+.iris {
+    background-color: var(--hair);
+    width: 70%;
+    height: 80%;
+    border-radius: 100%;
+    position: absolute;
+    left: 17%;
+}
+
+.pupil {
+    background-color: black;
+    width: 70%;
+    height: 50%;
+    border-radius: 100%;
+    position: absolute;
+    left: 17%;
+    top: 10px
+}
+
+.pupil-light {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+/* 얼굴>코 */
+
+.nose {
+    background-color: black;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 60px;
+    left: 45%;
+}
+
+/* 얼굴>입 */
+.mouth {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 8px solid black;
+    border-radius: 50%;
+    border-right: 3px solid rgba(255,255,255,0);
+    border-top: 3px solid rgba(255,255,255,0);
+    transform: rotate(-45deg);
+
+}
+
+.mouth.left {
+    position: absolute;
+    bottom: 40px;
+    left: 110px;
+
+}
+
+.mouth.right {
+    position: absolute;
+    bottom: 40px;
+    right: 110px;
+}
+/* 얼굴>수염 */
+
+.whiskers {
+    position: absolute;
+    top: 0%;
+}
+.whiskers.whiskers {
+    background-color: black;
+    width: 50px;
+    height: 3px;
+}
+
+.whiskers.left {
+    position: absolute;
+    bottom: 60px;
+    transform: rotate(10deg);
+}
+
+
+.whiskers.right {
+    
+}
+/* 얼굴 외 */
+/* .ear {
+    width: 40px;
+    height: 70px;
+    background-color: var(--skin);
+    position: absolute;
+    top: 120px;
+    
+}
+
+.ear.left {
+    left: -30px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.ear.right {
+    right: -30px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 20px;
+} */
