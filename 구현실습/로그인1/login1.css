@@ -36,6 +36,10 @@ button {
     border-color: transparent;
 }
 
+img {
+    vertical-align: bottom;
+}
+
 
 .login-box {
     width: 350px;
