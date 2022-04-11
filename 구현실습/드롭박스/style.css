@@ -80,11 +80,13 @@ li {
 }
 
 .item.selected {
-    padding: 5px 8px;
+    padding: 5px 8px 18px 8px;
     
     
 }
+
 .selected-item {
     background-color:rgba(248, 228, 255, 1) ;
     padding: 7px 144px 7px 10px;
     border-radius: 8px;
+}
