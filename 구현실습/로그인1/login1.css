@@ -5,7 +5,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
+* {
+    box-sizing: border-box;
+}
 body,p,ul,button{
     margin: 0;
     padding: 0;
@@ -20,7 +22,6 @@ ul {
 li {
     display: block;
     font-size: 12px;
-    margin-bottom: 18px;
 }
 
 article {
@@ -43,7 +44,6 @@ img {
 
 .login-box {
     width: 350px;
-    height: 100px;
     margin: 30px 25px;
     padding: 20px 0px;
     border: solid 1px #DBDBDB;
