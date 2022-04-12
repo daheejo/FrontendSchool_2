@@ -7,6 +7,7 @@
 }
 *{
     font-family: 'SpoqaHanSansNeo-Regular';
+    box-sizing: border-box;
 }
 body,p,ul,button,img,div{
     margin: 0;
@@ -42,7 +43,6 @@ li {
 }
 .select-box {
     width: 200px;
-    height: 14px;
     border: 1px solid #C4C4C4;
     border-radius: 10px;
     padding:13px 0 ;
@@ -57,7 +57,7 @@ li {
 
 .dropbox {
     width: 200px;
-    height: 208px;
+    /* height: 208px; */
     text-align: left;
     border: 1px solid #C4C4C4;
     border-radius: 14px;
@@ -74,8 +74,8 @@ li {
 }
 .item {
     font-size: 14px;
-    width: 182px;
-    height: 16px;
+    width: 200px;
+    height: 40px;
     padding: 12px 0 12px 18px; 
 }
 
