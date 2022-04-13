@@ -31,11 +31,8 @@ h1 {
     font-size: 65px;
     font-weight: normal;
     text-align: center;
+    
 
-}
-
-.babylion {
-   
 }
 
 .lioncap {
@@ -45,6 +42,7 @@ h1 {
     transform: translate(-50%,-50%);
     width: 400px;
     height: 400px;
+    margin-top: 40px;
     border-radius: 49% 48% 52% / 32% 29% 71% 68%; 
     background-color: var(--lioncap);
     border: 5px solid var(--line);
