@@ -49,6 +49,7 @@ h1 {
     background-color: var(--lioncap);
     border: 5px solid var(--line);
     box-shadow: inset -13px -4px 18px -3px rgba(184,79,22,1);
+    animation: moving-lion 2s infinite ease-in-out;
    
 }
 /* 얼굴 */
@@ -89,9 +90,7 @@ h1 {
     background-color: var(--ear);
     box-shadow: inset -6px -4px 18px -3px rgba(184,79,22,1);
     border: 5px solid var(--line);
-    animation-name: bigger-ear;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation: bigger-ear 1s infinite ease-in-out;
 }
 
 .ear.left {
@@ -115,9 +114,7 @@ h1 {
     background-color: var(--ear-inner);
     box-shadow: inset -6px -4px 18px -3px rgba(184,79,22,1);
     border: solid 5px var(--line);
-    animation-name: bigger-ear;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation: bigger-ear 1s ease-in-out infinite;
 }
 
 .ear-inner.left {
@@ -320,13 +317,11 @@ h1 {
 }
 
 @keyframes moving-lion {
-    0% {
-        transform: scale3d()
-    }
 
-    100% {
-        transform: translateY()
+    60% {
+        padding: 0px 20px;
     }
+    
 }
 
 @keyframes moving-tail {
@@ -341,3 +336,4 @@ h1 {
         transform: rotateY(-20deg);
     }
 }
+
