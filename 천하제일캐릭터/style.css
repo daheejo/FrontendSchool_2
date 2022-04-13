@@ -34,8 +34,23 @@ h1 {
 
 }
 
+.babylion {
+   
+}
 
-
+.lioncap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    border-radius: 49% 48% 52% / 32% 29% 71% 68%; 
+    background-color: var(--lioncap);
+    border: 5px solid var(--line);
+    box-shadow: inset -13px -4px 18px -3px rgba(184,79,22,1);
+   
+}
 /* 얼굴 */
 .face {
     position: absolute;
@@ -52,19 +67,6 @@ h1 {
 
 }
 
-.lioncap {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 400px;
-    height: 400px;
-    border-radius: 49% 48% 52% / 32% 29% 71% 68%; 
-    background-color: var(--lioncap);
-    border: 5px solid var(--line);
-    box-shadow: inset -13px -4px 18px -3px rgba(184,79,22,1);
-   
-}
 
 .hair {
     background-color: var(--hair);
@@ -279,8 +281,7 @@ h1 {
 
 /* 얼굴 외>꼬리 */
 .tail {
-    display: inline;
-
+    position: relative;
 }
 
 .tail-head {
@@ -289,16 +290,16 @@ h1 {
     width: 50px;
     height: 50px;
     border-radius: 100% 0% 91% 9% / 93% 0% 100% 7% ;
-    right: 295px;
-    top: 375px;
+    left: 445px;
+    top: 205px;
     border: 5px solid var(--line);
     box-shadow: inset -6px -4px 18px -3px rgba(184,79,22,1);
 }
 
 .tail-curved {
     position: absolute;
-    right: 300px;
-    bottom: 192px;
+    left: 140px;
+    top: 265px;
     width: 350px; 
     height: 100px;  
     border: solid 5px var(--line);
