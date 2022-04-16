@@ -1,8 +1,9 @@
 @import 'reset.css';
+
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-*{
-    font-family: 'SpoqaHanSansNeo-Regular';
+* {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
     box-sizing: border-box;
     word-break: keep-all;
 }
@@ -46,10 +47,12 @@ a {
     padding: 20px 0 18px 0;
     text-align: center;
     border-bottom: 1px solid rgba(196, 196, 196, 1);
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
 }
 
 .modal-title-txt {
     display: inline-block;
+    margin-left: 50px;
     font-size: 16px;
     font-weight: 500;
 }
@@ -61,8 +64,6 @@ a {
     background-repeat: no-repeat;
     width: 22px;
     height: 22px;
-    
-
 }
 
 .login-input {
@@ -74,7 +75,7 @@ a {
     margin-bottom: 24px;
     font-size: 20px;
     font-weight: 500;
-
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
 }
 
 #id, #pw {
@@ -90,17 +91,19 @@ a {
     margin-bottom: 17px;
 }
 .staying-unchecked {
-    /* float: left; */
+    float: left;
+    background-image: url('icon_check_empty.png');
+    background-repeat: no-repeat;
     text-align: left;
     color: rgba(118, 118, 118, 1);
 
 }
 
-.staying-unchecked::before {
-    content: '';
-    background-image: url('icon_check_empty.png');
-    /* width: 22px;
-    height: 22px; */
+.staying-unchecked::after {
+    content: '로그인 상태 유지';
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
 }
 
 .login-btn {
@@ -112,11 +115,12 @@ a {
     font-weight: 700;
     background-color: rgba(47, 128, 237, 1);
     border-radius: 5px;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
 }
 
 .other-opts {
     text-align: center;
-    
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
 }
 
 .signup, .find-account {
@@ -161,23 +165,23 @@ a {
 
 .social-login [class^="login"] {
     display: block;
-    padding: 15px 0;
+    padding: 15px 15px 0 0;
     height: 50px;
     margin-bottom: 10px;
     color:rgba(118, 118, 118, 1);
     border-radius: 5px;
     font-size: 16px;
     font-weight: 500;
+    text-align: center;
 }
 
 .social-login [class^="login"]::before {
+    /* display: block; */
     content: '';
     float: left;
     width: 22px;
     height: 22px;
-    margin: 14px 0 14px 15px;
-    line-height: 50px;
-    
+    margin:  0 14px 15px;
 }
 
 .login-ggl {
