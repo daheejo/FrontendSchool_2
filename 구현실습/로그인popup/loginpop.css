@@ -5,6 +5,8 @@
     font-weight: normal;
     font-style: normal;
 }
+@import 'reset.css';
+
 *{
     font-family: 'SpoqaHanSansNeo-Regular';
     box-sizing: border-box;
