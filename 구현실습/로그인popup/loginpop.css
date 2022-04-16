@@ -32,9 +32,11 @@ p {
     font-size: 16px;
 }
 
-button {
-    border-color: transparent;
+a {
+    text-decoration: none;
+    display: block;
 }
+
 .box {
     width: 500px;
     padding: 30px;
@@ -53,4 +55,5 @@ button {
     background-color: #2F80ED;
     color: white;
     font-size: 22px;
+    line-height: 60px;
 }
