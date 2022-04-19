@@ -1,0 +1,231 @@
+@import 'reset.css';
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+input {
+    border: 1px solid rgba(196, 196, 196, 1);
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+.hidden {
+    display: none;
+}
+.modalbox {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.modal-title {
+    padding: 20px 0 18px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(196, 196, 196, 1);
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+.modal-title-txt {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modal-title-exit {
+    float: right;
+    margin-right: 24px;
+    background-image: url('close.png');
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+}
+
+.login-input {
+    flex-direction: column;
+    padding: 26px 24px 0 24px;
+}
+
+.login-greet {
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+#id, #pw {
+    width: 472px;
+    padding: 15px 0 15px 16px;
+}
+
+#id {
+    margin-bottom: 10px;
+}
+
+#pw {
+    margin-bottom: 17px;
+}
+.staying-unchecked {
+    float: left;
+    background-image: url('icon_check_empty.png');
+    background-repeat: no-repeat;
+    text-align: left;
+    color: rgba(118, 118, 118, 1);
+
+}
+
+.staying-unchecked::after {
+    content: '로그인 상태 유지';
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.login-btn {
+    padding: 14px 211px;
+    margin-top: 21px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(47, 128, 237, 1);
+    border-radius: 5px;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+.other-opts {
+    text-align: center;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+.signup, .find-account {
+    color: rgba(118, 118, 118, 1);
+}
+
+.signup::after {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    margin: 0 12px;
+    background-color: rgba(118, 118, 118, 1);
+}
+
+.div-line {
+    padding: 30px 0 0 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgba(118, 118, 118, 1);
+}
+
+.div-line::before, 
+.div-line::after {
+    content: "";
+    display: inline-block;
+	background: rgba(118, 118, 118, 1);
+    width: 210px;
+	height: 1px;
+    line-height: 0;
+    vertical-align: middle;
+    margin: 0 13px;
+
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 15px 24px;
+}
+
+.social-login [class^="login"] {
+    display: block;
+    padding: 15px 15px 0 0;
+    height: 50px;
+    margin-bottom: 10px;
+    color:rgba(118, 118, 118, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.social-login [class^="login"]::before {
+    /* display: block; */
+    content: '';
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin:  0 14px 15px;
+    
+}
+
+.login-ggl {
+    border: 1px solid rgba(118, 118, 118, 1);
+}
+.login-ggl::before {
+    width: 28px; 
+    height: 28px;
+    background: url('spritesheet2.png') -5px -39px;
+    background-size: 32px 130px;
+}
+
+
+
+.login-fb {
+    border: 1px solid rgba(45, 156, 219, 1);
+}
+
+.login-fb::before {
+    width: 28px; 
+    height: 28px;
+    background: url('spritesheet2.png') -5px -5px;
+    background-size: 32px 130px;
+}
+
+.login-naver {
+    border: 1px solid rgba(0, 191, 24, 1);
+}
+
+.login-naver::before {
+    width: 28px; 
+    height: 28px;
+    background: url('spritesheet2.png')-5px -103px;
+    background-size: 32px 130px;
+}
+
+.login-kakao {
+    border: 1px solid rgba(242, 201, 76, 1);
+}
+
+.login-kakao::before {
+    width: 28px; 
+    height: 28px;
+    background: url('spritesheet2.png') -5px -71px;
+    background-size: 32px 130px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 또는 회원가입</title>
+    <link rel="stylesheet" href="login-modal.css">
+</head>
+<body>
+    <section class="modalbox">
+        <header class="modal-title">
+            <h1 class="modal-title-txt">로그인 또는 회원가입</h1>
+            <button class="modal-title-exit"></button>
+        </header>
+        <section class="login-input">
+            <h2 class="login-greet">위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+            <form action="" method="post">
+                <label for="id"></label>
+                <input id="id" type="text" placeholder="아이디" required>
+                <p class="hidden">아이디를 입력해주세요.</p>
+                <label for="pw"></label>
+                <input id="pw" type="password" placeholder="비밀번호" required>
+                <p class="hidden">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
+                <button type="button" class="staying-unchecked"></button>
+                <a href="#none" class="login-btn">로그인</a>
+            </form>
+            <div class="other-opts">
+                <a href="#none" class="signup">회원가입</a><a href="#none" class="find-account">아이디/비밀번호 찾기</a>
+            </div>
+        </section>
+        <div class="div-line">또는</div>
+        <article class="social-login">
+            <h2 class="hidden">소셜 계정으로 로그인</h2>
+            <button class="login-ggl">구글 계정으로 로그인</button>
+            <button class="login-fb">페이스북 계정으로 로그인</button>
+            <button class="login-naver">네이버 계정으로 로그인</button>
+            <button class="login-kakao">카카오톡 계정으로 로그인</button>
+        </article>
+    </section>
+</body>
+</html>
