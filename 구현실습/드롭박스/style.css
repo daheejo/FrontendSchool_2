@@ -11,50 +11,43 @@
     box-sizing: border-box;
 }
 
-p{
-    margin-left: 14px;
-}
-img {
-    width: 12px;
-    height: 8px;
-    margin-right: 16px;
-}
-
+/* 
 ul{
     list-style-type:none;
 }
 
 li {
     display: block;
+} */
+
+.txt-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
     font-family: 'SpoqaHanSansNeo-Regular';
 }
-.one,.two {
-    width:210px;
-    height: 250px;
-    text-align: center;
-    margin-left: 20px;
-}
 
 .select-box {
     width: 200px;
+    background-color: white;
     border: 1px solid #C4C4C4;
     border-radius: 10px;
-    padding:13px 0 ;
-    display: flex;
-    justify-content: space-between;
+    padding:13px 0 13px 14px;
     margin-bottom: 9px;
+    background-image: url('Polygon 1.svg');
+    background-repeat: no-repeat;
+    background-position: 90%;
+    text-align: left;
 }
 
-.default-value {
-    font-size: 12px;
-}
 
 .dropbox {
     width: 200px;
@@ -65,31 +58,31 @@ li {
     box-shadow: 4px 4px 14px 0 #00000026;
 }
 
-.dropbox.hidden {
-    display: none;
-}
 
-.select-box.shadow:hover {
+.select-box:hover,
+.select-box:focus {
     border: 1px solid rgba(155, 81, 224, 1);
     outline: 3px solid rgba(248, 228, 255, 1);
 }
-.item {
+
+.dropbox li {
     font-size: 14px;
     width: 200px;
     height: 40px;
     padding: 12px 0 12px 10px; 
 }
 
-.item:hover {
+.dropbox li:hover,
+.dropbox li:focus {
     background-color:rgba(248, 228, 255, 1) ;
     width: 184px;
     border-radius: 8px;
 }
 
-.item:first-child {
+.dropbox li:first-child {
     margin-top: 4px;
 }
 
-.item:last-child {
+.dropbox li:last-child {
     margin-bottom: 4px;
 }
