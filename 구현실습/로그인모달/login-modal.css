@@ -182,22 +182,32 @@ a {
     width: 22px;
     height: 22px;
     margin:  0 14px 15px;
+    
 }
 
 .login-ggl {
     border: 1px solid rgba(118, 118, 118, 1);
 }
 .login-ggl::before {
-    background: url('css_sprites.png') -52px -10px;
-    
+    width: 28px; 
+    height: 28px;
+    background: url('css_spritesx2.png') -122px -8px;
+    background-repeat: no-repeat;
+    background-size: 152px;
 }
+
+
 
 .login-fb {
     border: 1px solid rgba(45, 156, 219, 1);
 }
 
 .login-fb::before {
-    background: url('css_sprites.png') -94px -10px;
+    width: 28px; 
+    height: 28px;
+    background: url('css_spritesx2.png') -81px -8px;
+    background-repeat: no-repeat;
+    background-size: 152px;
 }
 
 .login-naver {
@@ -205,7 +215,11 @@ a {
 }
 
 .login-naver::before {
-    background: url('css_sprites.png') -10px -52px;
+    width: 28px; 
+    height: 28px;
+    background: url('css_spritesx2.png') -46px -8px;
+    background-repeat: no-repeat;
+    background-size: 152px;
 }
 
 .login-kakao {
@@ -213,5 +227,9 @@ a {
 }
 
 .login-kakao::before {
-    background: url('css_sprites.png') -10px -10px;
+    width: 28px; 
+    height: 28px;
+    background: url('css_spritesx2.png') -10px -9px;
+    background-repeat: no-repeat;
+    background-size: 152px;
 }
