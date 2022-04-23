@@ -53,3 +53,8 @@ table {
     height: 1px;
     overflow: hidden;
 }
+
+button {
+	background-color: transparent;
+	border: none;
+}
