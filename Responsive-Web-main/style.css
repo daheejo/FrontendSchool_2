@@ -125,7 +125,7 @@ strong {
 	bottom: 4rem;
 	right: 4rem;
 	padding-right: 1.2em;
-	background: url(./img/arrow.svg) no-repeat;right 50% / 1.2em;
+	background: url(./img/arrow.svg) no-repeat right 50% / 1.2em;
 	font-size: 1.6rem;
 }
 
@@ -140,7 +140,7 @@ strong {
 
 	.section-field {
 		display: flex;
-		margin-top: 60px;
+		margin-top: 6rem;
 
 	}
 	.section-field ul {
