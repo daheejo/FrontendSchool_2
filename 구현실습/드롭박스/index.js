@@ -12,9 +12,9 @@ selectBox.addEventListener('blur', function(){ //focus가 해제되는 것이 bl
 })
 
 dropboxOpt.forEach(opt => {
-    opt.addEventListener('click',function(e){
-        const optText = e.currentTarget.textContent.trim();
-        selectBox.textContent = optText;
+    opt.addEventListener('mousedown',function(e){
+        const optTextTarget = e.currentTarget.textContent.trim();
+        selectBox.textContent = optTextTarget;
         // dropbox.classList.remove('on'); 하수 방법
     })
 });
