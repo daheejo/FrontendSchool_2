@@ -11,14 +11,6 @@
     box-sizing: border-box;
 }
 
-/* 
-ul{
-    list-style-type:none;
-}
-
-li {
-    display: block;
-} */
 
 .txt-ellipsis {
     white-space: nowrap;
@@ -36,6 +28,7 @@ li {
 }
 
 .select-box {
+    position: relative;
     width: 200px;
     background-color: white;
     border: 1px solid #C4C4C4;
@@ -50,7 +43,10 @@ li {
 
 
 .dropbox {
+    position: absolute;
+    top:145px;
     width: 200px;
+    visibility: hidden;
     padding: 0 8px;
     text-align: left;
     border: 1px solid #C4C4C4;
@@ -58,7 +54,9 @@ li {
     box-shadow: 4px 4px 14px 0 #00000026;
 }
 
-
+.on {
+    visibility: visible;
+}
 .select-box:hover,
 .select-box:focus {
     border: 1px solid rgba(155, 81, 224, 1);
