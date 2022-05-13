@@ -4,11 +4,13 @@ const dropboxOpt = document.querySelectorAll('li');
 const OptText = document.querySelectorAll('.dropbox-opt');
 
 selectBox.addEventListener('click',function (){
-    dropbox.classList.toggle('on')
+    dropbox.classList.toggle('on');
+    selectBox.classList.toggle('polygon-up');
 })
 
 selectBox.addEventListener('blur', function(){ //focus가 해제되는 것이 blur
     dropbox.classList.remove('on');
+    selectBox.classList.remove('polygon-up');
 })
 
 dropboxOpt.forEach(opt => {

@@ -41,7 +41,10 @@
     text-align: left;
 }
 
+.select-box.polygon-up {
+    background-image: url('Polygonup.svg');
 
+}
 .dropbox {
     position: absolute;
     top:145px;
@@ -56,6 +59,7 @@
 
 .on {
     visibility: visible;
+
 }
 .select-box:hover,
 .select-box:focus {
