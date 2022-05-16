@@ -7,8 +7,6 @@
     <title>Today's Color: 오늘 당신에게 맞는 색깔은?</title>
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -19,8 +17,8 @@
         <ul class="color-list">
         </ul>
         <div class="btn-wrapper">
-            <button class="btn btn-light" type="button">STOP</button>
-            <button class="btn btn-light" type="button">REPLAY</button>
+            <button class="stop-btn" type="button">STOP</button>
+            <button class="rep-btn" type="button">REPLAY</button>
         </div>
 
     </article>
@@ -34,14 +32,36 @@
             "https://user-images.githubusercontent.com/74031552/168548596-fa1f3d8c-fa09-464b-922b-7f22d3d871c2.jpg",
             "https://user-images.githubusercontent.com/74031552/168548599-87557843-2486-43e4-a4ac-e5e57731ebc5.jpg",
             "https://user-images.githubusercontent.com/74031552/168548610-18cc6a55-20ef-4e69-a36f-9f5064e5dc06.jpg",
-            "https://user-images.githubusercontent.com/74031552/168548618-f123725a-701b-4e38-a032-b783a40a6f65.jpg",
-            "https://user-images.githubusercontent.com/74031552/168548622-1ad21893-c206-462b-8d10-1e01a573fd61.jpg",
+            "https://user-images.githubusercontent.com/74031552/168619495-2177cb83-1695-4f76-93e9-2a2868396526.jpg",
+            "https://user-images.githubusercontent.com/74031552/168618985-c7d70244-1040-4c95-bfac-a1aea75eb576.jpg",
         ];
+        const stopBtn = document.querySelector('.stop-btn');
+        const repBtn = document.querySelector('.rep-btn');
 
+        // arrPic[7].style.transform=`rotate(180deg)`;
+// li 엘리먼트 만들고 ul에 붙이기
         arrPic.forEach(item=>{
             const li = document.createElement('li');
             li.innerHTML=`<img src=${item} alt = ''>`
+            center.appendChild(li);
         })
+// 만든 li 가져오기
+        const items = center.querySelectorAll('li');
+        
+        const itemsLength = items.length;
+        const deg = 360/itemsLength;
+        const radius = items[0].offsetWidth*itemsLength/3.14/2
+
+        // 첫번째 요소와 나머지요소 회전시키기
+        items.forEach((item,index)=>{
+            if(index===0){
+                item.style.transform=`rotateY(0) translateZ(${radius}px)`
+            } else {
+                item.style.transform=`rotateY(${360/items.length*index}deg) translateZ(${radius}px)`
+            }
+        })
+
+    
 
     </script>
 </body>
