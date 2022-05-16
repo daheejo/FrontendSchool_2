@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Color: 오늘 당신에게 맞는 색깔은?</title>
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article id = 'app'>
+        <h1>What's the color of the day?</h1>
+        <ul class="color-list">
+        </ul>
+        <div class="btn-wrapper">
+            <button class="btn btn-light" type="button">STOP</button>
+            <button class="btn btn-light" type="button">REPLAY</button>
+        </div>
+
+    </article>
+
+    <script>
+        const center =  document.querySelector('.color-list');
+        const arrPic = [
+            "https://user-images.githubusercontent.com/74031552/168548581-931364e4-4918-46eb-8451-6408fe1989f3.jpg",
+            "https://user-images.githubusercontent.com/74031552/168548590-c1053ef4-ada2-4899-bb42-9629fd242570.jpg",
+            "https://user-images.githubusercontent.com/74031552/168548594-e291a9d8-cd57-4907-bf7f-7ca382cfd129.jpg",
+            "https://user-images.githubusercontent.com/74031552/168548596-fa1f3d8c-fa09-464b-922b-7f22d3d871c2.jpg",
+            "https://user-images.githubusercontent.com/74031552/168548599-87557843-2486-43e4-a4ac-e5e57731ebc5.jpg",
+            "https://user-images.githubusercontent.com/74031552/168548610-18cc6a55-20ef-4e69-a36f-9f5064e5dc06.jpg",
+            "https://user-images.githubusercontent.com/74031552/168548618-f123725a-701b-4e38-a032-b783a40a6f65.jpg",
+            "https://user-images.githubusercontent.com/74031552/168548622-1ad21893-c206-462b-8d10-1e01a573fd61.jpg",
+        ];
+
+        arrPic.forEach(item=>{
+            const li = document.createElement('li');
+            li.innerHTML=`<img src=${item} alt = ''>`
+        })
+
+    </script>
+</body>
+</html>
