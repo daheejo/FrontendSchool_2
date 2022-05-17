@@ -51,9 +51,9 @@
 
 @keyframes movingCarousel {
     from{
-        transform: rotateY(0deg);
+        transform: translate(-50%, -50%) rotateY(0deg) ;
     }
     to{
-        transform: rotateY(360deg);
+        transform: translate(-50%, -50%) rotateY(360deg) ;
     }
 }
