@@ -15,3 +15,6 @@ https://daheejo.github.io/FrontendSchool_2/lioncal/cal.html
 
 ### 위니브 로그인 모달창 구현
 https://daheejo.github.io/FrontendSchool_2/구현실습/로그인1
+
+### 오늘 당신에게 맞는 색은? (3D 캐러셀)
+https://daheejo.github.io/FrontendSchool_2/carousel/index.html
