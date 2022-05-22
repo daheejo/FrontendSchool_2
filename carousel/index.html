@@ -61,7 +61,13 @@
             }
         })
 
-    
+        stopBtn.addEventListener('click', function (){
+            center.classList.add('paused')
+        })
+
+        repBtn.addEventListener('click', function(){
+            center.classList.remove('paused')
+        })
 
     </script>
 </body>

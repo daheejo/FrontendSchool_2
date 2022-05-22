@@ -21,6 +21,11 @@
     animation: movingCarousel 40s steps(10000,end) infinite;
 }
 
+.paused {
+    animation-play-state: paused;
+}
+
+
 .color-list li {
     position: absolute;
     top: 0;
