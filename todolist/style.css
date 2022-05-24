@@ -89,11 +89,12 @@ button {
     background-color: white;
     border-color: transparent;
     border-radius: 10px;
-    margin: 10px;
+    margin-left: 10px;
 }
 
 button:hover {
-    background-color: orangered;
+    background-color: black;
+    color:white;
 }
 .wrapper{
     width: 300px;
